@@ -13,6 +13,7 @@
 		C5DFA9722B5CCD25002BDF34 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C5DFA9702B5CCD25002BDF34 /* Main.storyboard */; };
 		C5DFA9742B5CCD26002BDF34 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C5DFA9732B5CCD26002BDF34 /* Assets.xcassets */; };
 		C5DFA9772B5CCD26002BDF34 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C5DFA9752B5CCD26002BDF34 /* LaunchScreen.storyboard */; };
+		C5DFA9802B5CCD3F002BDF34 /* HandShadows in Frameworks */ = {isa = PBXBuildFile; productRef = C5DFA97F2B5CCD3F002BDF34 /* HandShadows */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -31,6 +32,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C5DFA9802B5CCD3F002BDF34 /* HandShadows in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -83,6 +85,9 @@
 			dependencies = (
 			);
 			name = HandShadowsExample;
+			packageProductDependencies = (
+				C5DFA97F2B5CCD3F002BDF34 /* HandShadows */,
+			);
 			productName = HandShadowsExample;
 			productReference = C5DFA9672B5CCD25002BDF34 /* HandShadowsExample.app */;
 			productType = "com.apple.product-type.application";
@@ -111,6 +116,9 @@
 				Base,
 			);
 			mainGroup = C5DFA95E2B5CCD25002BDF34;
+			packageReferences = (
+				C5DFA97E2B5CCD3F002BDF34 /* XCRemoteSwiftPackageReference "HandShadows" */,
+			);
 			productRefGroup = C5DFA9682B5CCD25002BDF34 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -363,6 +371,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		C5DFA97E2B5CCD3F002BDF34 /* XCRemoteSwiftPackageReference "HandShadows" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/adamwulf/HandShadows";
+			requirement = {
+				branch = main;
+				kind = branch;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		C5DFA97F2B5CCD3F002BDF34 /* HandShadows */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = C5DFA97E2B5CCD3F002BDF34 /* XCRemoteSwiftPackageReference "HandShadows" */;
+			productName = HandShadows;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = C5DFA95F2B5CCD25002BDF34 /* Project object */;
 }
